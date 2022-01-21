@@ -1,0 +1,29 @@
+input.ng-invalid{
+    border-left: 5px solid red;
+    border-top-left-radius: 10px;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+    border-top-left-radius: 10px;
+    
+}
+.star{
+    font-size: 22px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+.f-size{
+  width: 500px;
+}
+/* p {
+    font-family: Lato;
+  }
+  
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  .invalid-feedback {
+    display: block;
+    color: red;
+  } */

@@ -1,1 +1,76 @@
 <p>gallery works!</p>
+<!--Directive-->
+<div *ngIf="condition; else xyz">
+    <h1>Vimal</h1>
+</div>
+
+<ng-template #xyz>
+    <div>
+        <h1>Going</h1>
+    </div>
+</ng-template>
+<form action="">
+    <input type="text" #fruit value={{fruitsnull}}>:<input type="button" value="Add Fruit "
+        (click)="addfruit(fruit.value)">
+
+    <ol>
+        <li *ngFor="let fruitnames of fruits; index as i ">
+            {{i }}----{{fruitnames}}
+        </li>
+    </ol>
+</form>
+<!--End here-->
+<!--ngClass Attribute-->
+<div [ngClass]="{bg:true, div1:true, bdr:true}">
+    <h1>Welcome To ngClass Attribute</h1>
+</div>
+<div class="bg div">
+    <h1>Welcome To ngClass Attribute</h1>
+</div>
+
+<div [ngStyle]="{'color': clr}">
+    <h4>Welcome</h4>
+</div>
+<div []>
+    <h4>Welcome</h4>
+    <select>
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+        <option>Pink</option>
+        <option>YEllow</option>
+
+    </select>
+</div>
+<!-- <select [(ngModel)]="selected">
+    <option *ngFor="let datas of data" [ngStyle]="{'color': datas.color}" 
+    [ngValue]="datas">
+    {{datas.name}}
+</option>
+   </select>
+  <div [ngStyle]="{'background-color': selected.color}">{{selected.name}}</div> -->
+
+
+<!--End here-->
+
+<!--for if switch  directive start here-->
+<div *ngFor="let day of days">
+
+    <div *ngIf="day=='Sunday' || day=='Saturday' ; else elseBlock">
+        <h1>{{day}}: is weekend </h1>
+
+    </div>
+    <ng-template #elseBlock>
+        <h1> {{day}}: week days </h1>
+    </ng-template>
+</div>
+
+
+<!-- <div [ngSwitch]="myval">
+    <h6 ngSwitchCase="1">Tamil</h6>
+    <h6 ngSwitchCase="2">kannada</h6>
+    <h6 ngSwitchCase="3">Marati</h6>
+    <h6 ngSwitchCase="4">Hindi</h6>
+    <h6 ngSwitchCase="5">English</h6>
+
+</div> -->

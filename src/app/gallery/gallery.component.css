@@ -1,0 +1,12 @@
+.bdr{
+    border: 2px solid crimson;
+}
+.bg{
+    background-color:darkblue;
+}
+.div{
+    color: white;
+    font-size: 20px;
+    width: 600px;
+    height: 200px;
+}

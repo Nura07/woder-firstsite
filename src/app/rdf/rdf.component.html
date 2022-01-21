@@ -1,0 +1,34 @@
+<p>rdf works!</p>
+<div class="container">
+    <div class="row">
+       <h1> Reactive Directive Form</h1>
+             <form [formGroup] ="loginForm">
+                 <div class="form-group">
+                   <label for="exampleInputEmail1" class="form-label">Email address</label>
+                   <!-- <span class="text text-danger star" *ngIf="e1.touched && e1.invalid">*</span>
+                   <span class="text text-success star" *ngIf=" e1.valid">* </span> -->
+                   <input type="email" class="form-control" id="exampleInputEmail1" 
+                   placeholder="Enter name"  formControlName="e1" name="e1" required>
+                   
+               
+                   <span class="text text-danger" *ngIf="loginForm.get('e1')?.invalid && loginForm.get('e1')?.touched"> Email id Requried </span>
+                    <span class="text text-success" *ngIf="loginForm.get('e1')?.valid"> success</span> 
+                 </div>
+                 <div class="mb-3">
+                   <label for="exampleInputPassword1" class="form-label">Password</label>
+                   
+                   
+                   <input type="password" class="form-control" id="exampleInputPassword1" formControlName="p1" placeholder="Enter password" name="p1" required>
+                <span class="text text-danger" *ngIf="loginForm.get('p1')?.invalid && loginForm.get('p1')?.touched">password Requried </span>
+                <span class="text text-success" *ngIf="loginForm.get('p1')?.valid"> Success</span>
+                 
+                 </div>
+                 
+                 <button type="submit" class="btn btn-primary">Submit</button>
+               </form>
+         
+     </div> 
+ <div>
+     <hr>
+     
+         

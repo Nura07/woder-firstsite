@@ -4,6 +4,7 @@ import { DesignComponent } from './design/design.component';
 import { DevComponent } from './dev/dev.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
+import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ServiceComponent } from './service/service.component';
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'lifecylehooks',
+    component:LifecyclehooksComponent
   },
   {
     path:'service',
